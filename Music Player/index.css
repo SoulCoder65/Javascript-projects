@@ -1,0 +1,17 @@
+body {
+  background-image: linear-gradient(90deg, red, blue);
+}
+.music-alb {
+  width: 60%;
+  border: 1px solid black;
+}
+.row .img-fluid {
+  height: 20vw;
+  width: 23vw;
+}
+.col-md-4 {
+  padding-top: 2%;
+}
+.music-alb {
+  background-image: linear-gradient(pink, yellow);
+}

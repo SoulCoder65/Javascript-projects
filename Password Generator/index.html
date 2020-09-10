@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b81eae6acf.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Red+Rose&display=swap" rel="stylesheet">     <link rel="stylesheet" href="index.css" />
+
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="alert-popup-before " style="width: 30%; margin-left: 35%;">
+    
+    </div>
+    <div class="card">
+      <div class="card-header text-center">
+        Generate Password
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">
+          <div class="input-group mb-3" >
+            <input
+              type="text"
+              class="form-control"
+              id="generate-pass-field"
+              placeholder="Generated Password"
+              aria-label="Generated Password"
+              aria-describedby="basic-addon2"
+              style="border: 0;color: tomato;font-weight: bold;"
+              
+            />
+            <div class="input-group-append" >
+              <button type="button" class="btn btn-primary"id="copy-btn">
+                <i class="far fa-clipboard"></i>
+              </button>
+              
+            </div>
+          </div>
+        </h5>
+        <p class="card-text">
+            <!-- Pass length -->
+            <div class="row">
+                <div class="col-sm-8">
+                    <p>Password Length:</p>
+                </div>
+                <div class="col-sm-4 text-right ">
+                    <div class="form-check" >
+                        <input id="pass-length" class="form-input" type="text">
+                        <span class="checkmark"></span>
+                       
+
+                    </div>
+                </div>
+            </div>
+            <!-- End pass length -->
+            <!-- include uppercase -->
+         <div class="row">
+             <div class="col-sm-8">
+                 <p>Include UPPERCASE letters:</p>
+             </div>
+             <div class="col-sm-4 ">
+                <div class="custom-control custom-checkbox ">
+                    <input type="checkbox" class="custom-control-input text-right" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1"></label>
+                  </div>
+             </div>
+         </div>
+         <!-- End uppercase -->
+            <!-- include lowercase -->
+            <div class="row">
+                <div class="col-sm-8">
+                    <p>Include lowercase letters:</p>
+                </div>
+                <div class="col-sm-4 text-right">
+                    <div class="custom-control custom-checkbox ">
+                        <input type="checkbox" class="custom-control-input text-right" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2"></label>
+                      </div>
+                </div>
+            </div>
+            <!-- End lowercase -->
+               <!-- include Numbers -->
+         <div class="row">
+            <div class="col-sm-8">
+                <p>Include Numbers:</p>
+            </div>
+            <div class="col-sm-4 text-right">
+                <div class="custom-control custom-checkbox ">
+                    <input type="checkbox" class="custom-control-input text-right" id="customCheck3">
+                    <label class="custom-control-label" for="customCheck3"></label>
+                  </div>
+            </div>
+        </div>
+        <!-- End Numbers -->
+           <!-- include Symbols -->
+           <div class="row">
+            <div class="col-sm-8">
+                <p>Include Symbols:</p>
+            </div>
+            <div class="col-sm-4 text-right">
+                <div class="custom-control custom-checkbox ">
+                    <input type="checkbox" class="custom-control-input text-right" id="customCheck4">
+                    <label class="custom-control-label" for="customCheck4"></label>
+                  </div>
+            </div>
+        </div>
+        <!-- End Symbols -->
+                  </p>
+        <button type="submit" class="btn btn-danger btn-block">Generate Password</button>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

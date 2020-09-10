@@ -1,0 +1,67 @@
+body {
+  overflow: hidden;
+  margin: 0;
+}
+.clouds {
+  position: relative;
+  animation: clouds-move 0.15s ease-in 0s infinite;
+}
+.green-back {
+  position: absolute;
+  bottom: 24%;
+  animation: clouds-move 0.15s ease-in 0s infinite;
+}
+.road {
+  position: absolute;
+  bottom: -4%;
+  width: 150%;
+  animation: road-movement 0.15s ease 0s infinite;
+}
+.car-pic {
+  position: absolute;
+  bottom: 25%;
+  animation: car-move 0.15s ease-in 0s infinite;
+}
+#car {
+  width: 29%;
+}
+.right-wheel {
+  position: absolute;
+  bottom: 23.3%;
+  width: 5.3%;
+  margin-left: 2.2%;
+  animation: rightwheel-move 0.15s ease 0s infinite;
+}
+.left-wheel {
+  position: absolute;
+  bottom: 24.7%;
+  width: 4%;
+  margin-left: 14.3%;
+  animation: leftwheel-move 0.1s ease 0s infinite;
+}
+@keyframes leftwheel-move {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rightwheel-move {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes road-movement {
+  100% {
+    transform: translateX(-30%);
+  }
+}
+@keyframes car-move {
+  100% {
+    transform: translateY(0.7%);
+  }
+}
+@keyframes clouds-move {
+  100% {
+    transform: translateX(0.1%);
+    transform: translateY(0.11%);
+  }
+}

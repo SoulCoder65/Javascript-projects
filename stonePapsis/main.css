@@ -1,0 +1,51 @@
+.text-center > h1 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 2%;
+}
+/* Button to reset game */
+#reset-btn {
+  display: none;
+}
+/* Score Manipulatioon */
+#player-score,
+#computer-score {
+  display: inline-block;
+ 
+}
+#player-score {
+  background-color: blue;
+  width: 40%;
+  text-align: left;
+  color: white;
+  font-family: "Oswald";
+  font-size: 160%;
+  padding-left: 1%;
+  left: 0;
+  margin: 0;
+}
+#computer-score {
+  background-color: gray;
+  width: 40%;
+  text-align: right;
+  color: white;
+  font-family: "Oswald";
+  font-size: 160%;
+  padding-right: 1%;
+  left: 0;
+  margin: 0;
+}
+/* Stone paper scissor icons */
+.hands-icons {
+  width: 80%;
+  margin-top: 3%;
+  margin-left: 6%;
+}
+#rock:hover,
+#scissor:hover,
+#paper:hover {
+  color: blue;
+}
+.modal-body,
+.modal-footer {
+  background-color: thistle;
+}

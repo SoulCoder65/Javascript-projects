@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.title {
+  visibility: hidden;
+  width: 100%;
+}
+.title-img {
+  width: 15%;
+}
+.title-animation {
+  visibility: visible;
+  width: 200%;
+  position: absolute;
+  left: 34%;
+  top: 10%;
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: bold;
+  color: cornflowerblue;
+
+  animation: title-ani 2s ease-in-out 1;
+}
+.score {
+  position: absolute;
+  bottom: 90%;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 300%;
+  color: green;
+  font-weight: bold;
+}
+.container-fluid {
+  width: 100%;
+  overflow: hidden;
+}
+.bg-img {
+  position: absolute;
+  filter: brightness(40%);
+  filter: contrast(80%);
+  width: 100vw;
+  height: 100%;
+  left: 0;
+}
+.player {
+  position: absolute;
+  width: 18%;
+  bottom: 3%;
+}
+.player-gameover {
+  position: absolute;
+  width: 18%;
+  animation: player-over 10s ease-out 1;
+}
+
+.player-move {
+  position: absolute;
+  width: 18%;
+  bottom: 3%;
+  animation: player-jump 1s ease-in 1;
+}
+.enemy {
+  position: absolute;
+  width: 13%;
+  right: 1%;
+  bottom: -1%;
+  animation: enemy-movement 7s ease infinite;
+}
+.enemy-gameover {
+  position: absolute;
+  width: 13%;
+  right: 1%;
+  bottom: -1%;
+}
+.gameover {
+  visibility: hidden;
+}
+.gameover-visible {
+  position: absolute;
+  width: 30%;
+  margin-left: 35%;
+  top: 20%;
+}
+
+/* ENEMY ANIMATION */
+@keyframes enemy-movement {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}
+@keyframes player-jump {
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: 50%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+@keyframes title-ani {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes player-over {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 0;
+    transform: translateY(200%);
+  }
+}

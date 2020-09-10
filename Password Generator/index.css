@@ -1,0 +1,27 @@
+.card {
+  width: 30%;
+  margin: auto;
+  margin-top: 3%;
+  border: 2px solid saddlebrown;
+  box-shadow: 1px 3px #16213e;
+}
+/* password length field */
+#pass-length {
+  width: 60%;
+}
+.card-header {
+  background-color: #16213e;
+  color: white;
+  font-weight: bold;
+}
+.custom-checkbox {
+  margin-left: 80%;
+}
+.card-body {
+  background-color: #0f3460;
+  font-family: "Oswald", sans-serif;
+  font-family: "Red Rose", cursive;
+  font-size: 90%;
+  color: #fddb3a;
+  font-weight: bold;
+}

@@ -1,0 +1,125 @@
+<!-- Thanks to Code Explained Youtube channel for tutorial which help me in making this -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b81eae6acf.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Geo Plugin -->
+    <script
+      language="JavaScript"
+      src="http://www.geoplugin.net/javascript.gp"
+      type="text/javascript"
+    ></script>
+    <!-- chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <title>Covid-19 Live Stats</title>
+  </head>
+  <body>
+    <!-- Head -->
+    <header>
+      <h1 class="text-center alert alert-custom-color">
+        <img class="img-fluid icon-corona" src="images/coronaicon.png" alt="" />
+        Covid-19 Live Stats Tracker
+        <img class="img-fluid icon-corona" src="images/coronaicon.png" alt="" />
+      </h1>
+    </header>
+    <!-- Head-END -->
+    <div class="head">
+      <img class="img-fluid corona-back" src="images/corona_back.jpg" alt="" />
+
+      <!-- Navbar -->
+      <div class="nav-div">
+        <div class="details-covid-nav">
+          <div class="search">
+            <h2 style="color: brown; font-weight: bold;">Country</h2>
+            <button class="btn btn-outline-dark text-white">Change</button>
+            <div class="countries-list bg-transparent mt-2 hide">
+              <nav class="navbar navbar-light bg-transparent">
+                <form class="form-inline">
+                  <input
+                    class="form-control bg-transparent text-white mr-sm-2 searchcountry"
+                    style="width: 87%; border: 0;"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+
+                  <img class="close mx-2" src="images/close.svg" alt="" />
+                </form>
+              </nav>
+              <div class="countries-names"></div>
+            </div>
+          </div>
+          <!-- total cases +new Cases -->
+          <div class="total-cases">
+            <h6>Total Cases</h6>
+            <h4>No.of Cases</h4>
+            <h5>New Cases</h5>
+          </div>
+          <!-- Recovered +new Recover -->
+          <div class="recovered-cases">
+            <h6>Recovered Cases</h6>
+            <h4>No.of Cases</h4>
+            <h5>New Cases</h5>
+          </div>
+          <!-- Deaths + New Deaths -->
+          <div class="deaths">
+            <h6>Deaths</h6>
+            <h4>No.of Cases</h4>
+            <h5>New Cases</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar end -->
+      <!-- Chart -->
+        <div class="chart">
+          <canvas id="myChart">dsi</canvas>
+        </div>
+      </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!--Custom Css  -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b81eae6acf.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Materialize Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Virtual Key Board</title>
+  </head>
+  <body>
+        <div class="text-field">
+      <div class="row text-center">
+        <div class="col-12">
+          <h3>Virtual KeyBoard By- <b>SoulCoder</b></h3> 
+        </div>
+       
+      </div>
+      <div class="row text-box">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"><b>KeyBoard Output</b></label>
+            <textarea class="form-control" id="Textarea" rows="3"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="keyboard-container">
+      <div class="keys">
+        <!-- ROW1 -->
+        <div class="row row-1" >
+          <div class="col-1">
+            <button class="btn btn-lg">1</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">2</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">3</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">4</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">5</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">6</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">7</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">8</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">9</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">0</button>
+          </div>
+          <div class="col-2">
+            <button class="btn btn-lg" id="back-space">
+              <i class="material-icons">backspace</i>
+            </button>
+          </div>
+        </div>
+        <!-- ROW1 END -->
+        <!-- ROW2 -->
+        <div class="row mt-3 row-2">
+            <div class="col-1">
+              <button class="btn btn-lg">q</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">w</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">e</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">r</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">t</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">y</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">u</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">i</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">o</button>
+            </div>
+            <div class="col-1">
+                <button class="btn btn-lg">p</button>
+              </div>
+        <!-- ROW2 END -->
+        <!-- ROW3 -->
+        <div class="row row-3">
+            <div class="col-2 cap-btn" >
+              <button class="btn btn-lg " id="capslock"><i class="material-icons">keyboard_capslock</i></button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">a</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">s</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">d</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">f</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">g</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">h</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">j</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-lg">k</button>
+            </div>
+            <div class="col-1">
+                <button class="btn btn-lg">l</button>
+              </div>
+              <div class="col-1">
+                <button class="btn btn-lg">p</button>
+              </div>
+              <div id="enter-key">
+                <button class="btn btn-lg enter-btn" id="enter"><i class="material-icons">keyboard_return</i></button>
+              </div>
+          
+        <!-- ROW3 END -->
+        <!-- ROw4 -->
+        <div class="row mt-3 row-4">
+          <div class="col-2 shift-btn">
+            <button class="btn btn-lg "><i class="material-icons">check_circle</i></button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">z</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">x</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">c</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">v</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">b</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg">n</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg" id="comma">,</button>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-lg" id="fullstop">.</button>
+          </div>
+          <div class="col-1">
+              <button class="btn btn-lg" id="ques">?</button>
+            </div>
+          </div>
+        <!-- ROW4 end -->
+        <!-- ROW5 -->
+      <div class="row text-center row-5">
+        <div class="col-12">
+          <button class="btn btn-lg " id="space"><i class="material-icons">crop_16_9</i></button>
+        </div>
+              <!-- ROW5 end -->
+ 
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

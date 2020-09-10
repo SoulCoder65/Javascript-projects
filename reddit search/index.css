@@ -1,0 +1,21 @@
+.card {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+@media screen and (max-width: 640px) {
+  .form-group {
+    font-size: 80%;
+    font-weight: bold;
+  }
+  .card-title {
+    font-size: 160%;
+    font-weight: bold;
+  }
+  h5 {
+    font-size: 80%;
+  }
+  .form-check-label {
+    font-size: 80%;
+  }
+}

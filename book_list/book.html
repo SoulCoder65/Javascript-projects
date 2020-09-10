@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="UTF-8" http-equiv="encoding" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="book.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b81eae6acf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Book List</title>
+  </head>
+  <body>
+    <div class="text-center mt-4">
+      <i class="fas fa-book-reader fa-6x px-3 text-primary"></i>
+      <h1 class="d-inline">Book <span style="color: tomato;">List</span> By <span style="color: tomato;">SoulCoder</span></h1>
+    </div>
+    <div class="alert-popup-before">
+    
+  </div>
+    <form class="form-work" method="GET">
+      <div class="form-group">
+        <label for="Bookname">Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          aria-describedby="emailHelp"
+          placeholder="Title"
+        />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="category">Category</label>
+        <input
+          type="text"
+          class="form-control"
+          id="category"
+          aria-describedby="emailHelp"
+          placeholder="category"
+        />
+      </div>
+        
+       
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Author</label>
+        <input
+          type="text"
+          class="form-control"
+          id="author"
+          placeholder="Author Name"
+        />
+      </div>
+
+      <input
+        type="submit"
+        class="btn btn-primary mt-3 btn-block"
+        id="add_book"
+        value="ADD"
+      />
+    </form>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Category</th>
+          <th scope="col">Author</th>
+          <th scope="col">Remove</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS -->
+    <script src="book.js"></script>
+  </body>
+</html>

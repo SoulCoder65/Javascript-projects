@@ -1,0 +1,138 @@
+.text-field {
+  margin-top: 2%;
+}
+.text-box {
+  margin-top: 2%;
+  margin-left: 20%;
+  width: 60%;
+}
+.keyboard-container {
+  background-color: #206a5d;
+}
+.keys {
+  margin-left: 8%;
+  width: 70%;
+  margin-top: 6%;
+  padding-top: 2%;
+}
+#back-space {
+  width: 8rem;
+  height: 3.5 rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-lg {
+  background-color: #62760c;
+  width: 5rem;
+  height: 3.5rem;
+  margin: 1%;
+  font-weight: bold;
+}
+.btn-lg:hover {
+  background-color: #81b214;
+  color: white;
+  font-weight: bold;
+  box-shadow: 4px 5px 3px #158467;
+}
+.row-1 {
+  margin-left: 6%;
+}
+.row-2 {
+  margin-left: 10%;
+}
+
+.row-3 {
+  position: relative;
+  margin-left: -14%;
+  margin-top: 2%;
+}
+.row-4 {
+  margin-left: 7%;
+}
+.row-5 {
+  width: 100%;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+.row-5 > div > button {
+  width: 50%;
+}
+.cap-btn {
+  padding-left: 3.5rem;
+}
+#capslock {
+  position: relative;
+  width: 8rem;
+}
+#capslock::before {
+  position: absolute;
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  margin-left: 40%;
+  margin-bottom: 30%;
+  font-size: 70%;
+}
+.on-off {
+  color: white;
+}
+#capslock::before {
+  position: absolute;
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  margin-left: 40%;
+  margin-bottom: 30%;
+  font-size: 70%;
+}
+
+#enter-key {
+  position: absolute;
+  margin-left: 101%;
+}
+.enter-btn {
+  width: 9rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shift-btn {
+  width: 8rem;
+}
+
+.shift-btn > button {
+  width: 8rem;
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .keys {
+    width: 100%;
+    margin-top: 6%;
+    padding-top: 2%;
+    margin-left: -1%;
+  }
+  .row {
+    width: 100%;
+  }
+  .row-1:first-child {
+    margin-left: 0px;
+  }
+  #back-space {
+    width: 100%;
+  }
+  #capslock {
+    width: 4.2rem;
+    margin-right: 2%;
+  }
+  .btn-lg {
+    background-color: #62760c;
+    font-size: 90%;
+    width: 2.4rem;
+    height: 3rem;
+
+    font-weight: bold;
+  }
+  .col-1 {
+    margin-left: 0px;
+  }
+}
