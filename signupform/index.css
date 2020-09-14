@@ -1,0 +1,148 @@
+/* MAin container */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Main container end */
+
+/* Removing num from numfield */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Removing num from numfield  END*/
+
+/* filter bgimg */
+.img-fluid {
+  filter: blur(7px);
+  width: 100vw;
+  height: 100vh;
+}
+/* for placing form on bg img */
+.form {
+  position: absolute;
+}
+/* centering form */
+form {
+  display: inline-block;
+  margin-right: 15%;
+  margin-top: 1%;
+}
+
+/* Adjust form input fields */
+.form-control {
+  display: block;
+}
+/* Mangaing innner form block */
+.form-cont {
+  width: 50vw;
+  height: 95vh;
+  background-image: linear-gradient(
+    90deg,
+    rgba(221, 160, 221, 0.3),
+    rgba(221, 160, 221, 0.8)
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px transparent violet;
+  border-radius: 30px;
+}
+/* for placing correct/wrong inside form input */
+.form-control1 {
+  position: relative;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+input {
+  border: 2px solid transparent;
+  width: 200%;
+  height: 1.9rem;
+}
+.form-control1 > i {
+  position: absolute;
+  left: 180%;
+  bottom: 35%;
+}
+.form-control1 > .fa-check-circle {
+  color: green;
+  visibility: hidden;
+}
+.form-control1 > .fa-exclamation-triangle {
+  color: red;
+  visibility: hidden;
+}
+.hide {
+  display: none;
+}
+/* decoration */
+form > * {
+  margin-top: 3%;
+}
+form > input {
+  width: 150%;
+}
+#sub-btn {
+  width: 100%;
+  margin-left: 28%;
+  margin-top: 10%;
+  color: black;
+  font-weight: bold;
+  background-color: yellow;
+  border: 0;
+  height: 1.6rem;
+  border: 1px solid yellow;
+  border-radius: 12px;
+}
+#sub-btn:hover {
+  background-color: yellowgreen;
+  border: 1px solid yellowgreen;
+  color: white;
+  cursor: pointer;
+}
+small {
+  color: #31112c;
+  font-weight: bold;
+}
+/* decoration end */
+
+/* MEdia queries */
+@media screen and (max-width: 1117px) {
+  .form-cont {
+    width: 80vw;
+  }
+  form {
+    margin-right: 10%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .form-cont {
+    width: 85vw;
+  }
+  form {
+    margin-right: 15%;
+  }
+}
+@media screen and (max-width: 590px) {
+  input {
+    width: 160%;
+  }
+  #sub-btn {
+    margin-left: 20%;
+  }
+}
