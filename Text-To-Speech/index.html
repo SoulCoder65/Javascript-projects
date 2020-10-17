@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/materialize.min.css"
+      media="screen,projection"
+    />
+    <!-- Material icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #d2d3c9;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: auto;
+      }
+
+      .hoverable {
+        width: 10%;
+      }
+
+      @media screen and (max-width: 740px) {
+        .img-fluid {
+          width: 15%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img class="img-fluid hoverable" src="images/text.png" alt="" />
+      <div class="forms">
+        <div class="row">
+          <div class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="text-value" type="text" class="validate" />
+                <label for="text-value">Enter Text...</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="range-field">
+          <label for="disabled">Rate</label>
+          <input type="range" id="rate" min="0.5" max="2" step="0.3" />
+        </p>
+        <p class="range-field">
+          <label for="disabled">Pitch</label>
+          <input type="range" id="pitch" min="0.5" max="2" step="0.3" />
+        </p>
+
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Choose your option</option>
+          </select>
+          <label>Select Voice</label>
+        </div>
+        <a class="waves-effect waves-light btn btn-large"
+          ><i class="material-icons right">search</i>Speak</a
+        >
+      </div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="/materialize.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

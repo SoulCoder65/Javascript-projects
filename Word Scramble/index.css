@@ -1,0 +1,98 @@
+body {
+  background-image: url(images/headerbg.jpg);
+  background-size: contain;
+  overflow: hidden;
+}
+
+.Conatiner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* HEader css */
+.header {
+  padding-left: 0px;
+  margin-left: 0;
+  width: 100vw;
+  height: 12vh;
+  background-color: #b83b5e;
+  display: flex;
+  justify-content: center;
+  font-family: "Sansita Swashed", cursive;
+  letter-spacing: 3px;
+}
+/* header text */
+.header h1 {
+  background-image: url(images/headerbg.jpg);
+  background-clip: text;
+  color: transparent;
+  background-size: contain;
+  font-weight: bold;
+  font-size: 360%;
+}
+/* Game screen css */
+.gameScreen {
+  margin-top: 2%;
+  width: 49vw;
+  height: 80vh;
+  background-color: #ff414d;
+  border-radius: 20%;
+  -webkit-box-shadow: 4px 3px 8px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 4px 3px 8px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 4px 3px 8px 0px rgba(50, 50, 150, 0.75);
+  border-top: 15px solid brown;
+  border-bottom: 15px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+#guessBox {
+  margin-top: 6%;
+  width: 40%;
+  height: 7%;
+  border: 2px solid brown;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+#playBtn {
+  margin-top: 2%;
+  transition: all 0.3s;
+}
+#playBtn:active,
+#playBtn:hover {
+  letter-spacing: 6px;
+  font-weight: bold;
+}
+#gameText {
+  font-size: 6 0%;
+  font-weight: bold;
+  font-family: "Sansita Swashed", cursive;
+}
+
+.input {
+  font-size: 30%;
+}
+/* for hiding input field */
+.hide {
+  display: none;
+}
+/* Game screen css end */
+@media screen and (max-width: 1190px) {
+  #gameText {
+    font-size: 30%;
+  }
+  #guessBox {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 705px) {
+  #gameText {
+    font-size: 20%;
+  }
+}
